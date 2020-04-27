@@ -35,7 +35,7 @@ namespace RPS_Game
                 // string of current round result to be stored in list
                 string results = "Round " + round + " - " + player1 + " chose " + rps[p1rand];
                 results += ", " + player2 + " chose " + rps[p2rand] + ". - ";
-
+                #region testing regions
                 switch (win)
                 { //win is mostly unique varying with what each player picks
                     case 0: //p1 rock p2 scissor p1 wins
@@ -70,7 +70,7 @@ namespace RPS_Game
                 { //player2 wins
                     results += player2 + " wins.";
                 }
-
+                #endregion 
                 resultsList.Add(results); // store results in a list
 
                 // conditions check to see if a player has won,checks if p1 or p2 has more than 2 wins.
